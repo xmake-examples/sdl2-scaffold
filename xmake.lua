@@ -1,11 +1,11 @@
 add_rules("mode.debug", "mode.release")
 
-add_requires("imgui", {configs = {glfw_opengl3 = true}})
+add_requires("libsdl")
 
-target("imgui-scaffold")
+target("sdl2-scaffold")
     set_kind("binary")
     add_files("src/*.cpp")
-    add_packages("imgui")
+    add_packages("libsdl")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
